@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:veterinario}/vet2021.db",
+            "name": "vet2021"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

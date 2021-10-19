@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="vet2021">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.20">
+    <root id="1">
+      <ServerVersion>3.34.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="animal"/>
+    <table id="7" parent="2" name="cliente"/>
+    <table id="8" parent="2" name="consulta"/>
+    <table id="9" parent="2" name="especie"/>
+    <table id="10" parent="2" name="exame"/>
+    <table id="11" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="12" parent="2" name="tratamento"/>
+    <table id="13" parent="2" name="vet"/>
+    <column id="14" parent="6" name="id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="15" parent="6" name="nome">
+      <Position>2</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="16" parent="6" name="ano_nasc">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="17" parent="6" name="sexo">
+      <Position>4</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="18" parent="6" name="id_especie">
+      <Position>5</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="19" parent="6" name="id_cliente">
+      <Position>6</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <key id="20" parent="6">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="22" parent="7" name="nome">
+      <Position>2</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="23" parent="7" name="end">
+      <Position>3</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="24" parent="7" name="cep">
+      <Position>4</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="25" parent="7" name="email">
+      <Position>5</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="26" parent="7" name="telefone">
+      <Position>6</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <key id="27" parent="7">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="29" parent="8" name="data">
+      <Position>2</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="30" parent="8" name="horario">
+      <Position>3</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="31" parent="8" name="comentario">
+      <Position>4</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="32" parent="8" name="id_animal">
+      <Position>5</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="33" parent="8" name="id_vet">
+      <Position>6</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="34" parent="8" name="id_tratamento">
+      <Position>7</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="35" parent="8" name="terminado">
+      <Position>8</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <key id="36" parent="8">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="38" parent="9" name="nome">
+      <Position>2</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <key id="39" parent="9">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="41" parent="10" name="descricao">
+      <Position>2</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="42" parent="10" name="id_consulta">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <key id="43" parent="10">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="11" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="45" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="46" parent="11" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="47" parent="11" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="48" parent="11" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="49" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="50" parent="12" name="id_animal">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="51" parent="12" name="nome">
+      <Position>3</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="52" parent="12" name="dataIni">
+      <Position>4</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="53" parent="12" name="dataFim">
+      <Position>5</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="54" parent="12" name="terminado">
+      <Position>6</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <key id="55" parent="12">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="56" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="57" parent="13" name="nome">
+      <Position>2</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="58" parent="13" name="email">
+      <Position>3</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="59" parent="13" name="telefone">
+      <Position>4</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <key id="60" parent="13">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
